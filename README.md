@@ -4,7 +4,15 @@
 
 # Description
 
-All-in-one tracking, notes, and code testing notebook template for working through "Blind 75" Leetcode problems in Python.
+All-in-one tracking, notes, and code testing notebook for working through "Blind 75" Leetcode problems.
+
+Take notes and work problems in python. Check off as you complete.
+
+***This is only a template for notes and coding. There are no solved problems here.***
+
+**Blind 75 Discussion:** *https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions*
+
+**Coding Patterns:** *https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed*
 
 ---
 
@@ -15,13 +23,17 @@ All-in-one tracking, notes, and code testing notebook template for working throu
     - Watch the first few minutes of this [tutorial](https://www.youtube.com/watch?v=HW29067qVWk) to get a general idea.
 - How do I get it?
     - Here are some suggestions (there are a ton of options and tutorials online) - ***Choose your preferred method***
-        - On linux or macOS
-            - Requires **python3** and **pip** installed: check in terminal with `python3 --version` and `pip --version` commands
-            - As explained on [Jupyter install page](https://jupyter.org/install)
-            - Install JupyterLab with `pip install jupyterlab` then launch with `jupyter-lab` command
-            - or install classic Jupyter Notebook with `pip install notebook` then launch with `jupyter notebook` command
-        - Download and install [Anaconda](https://www.anaconda.com/) - Jupyter is included
-        - Download and install [Visual Studio Code](https://code.visualstudio.com/Download)
+        - [Jupyter Official](https://jupyter.org/install) - install from command line with Python's package manager `pip`:
+            - Open terminal or powershell and use the following commands: 
+            - `pip -V` and `python3 -V` - checks package manager and python versions
+                - Linux/Unix/MacOS: should come preinstalled with some version of Python
+                - Windows: if not already installed, download and install from [python.org](https://www.python.org/downloads/)
+                    - ***Note***: check the "add to PATH" box during install to allow for command-line operation
+            - `pip install jupyter` - installs jupyter and required dependencies
+            - `jupyter-lab` - Launches Jupyter Lab in default browser
+            - `jupyter notebook` - Launches the classic Jupyter Notebook
+        - [Anaconda](https://www.anaconda.com/) - Open-source toolkit with Jupyter included
+        - [Visual Studio Code](https://code.visualstudio.com/Download)
             - In vscode, bring up extensions with `ctrl+shift+x` then type "Jupyter"
             - Click on the Jupyter extension from Microsoft, then click install
             - See this [vscode doc on using Jupyter](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
@@ -30,21 +42,14 @@ All-in-one tracking, notes, and code testing notebook template for working throu
 
 # Template overview
 
-- The TOC has problem lists split up by problem type.
-    - Headers have a navigation bar linking to various sections in the notebook.
-    - The problem links (e.g. "**Two Sum**") navigate to that problem in the notebook.
-    - **Web Links** navigate to that problem on leetcode.com
-- Checkboxes are formated with HTML (due to render issues with `- [ ]` markdown format in some environments)
-- Update checkboxes as follows:
-    - `double-click` or press `Enter` in cell.
+- **Navagation links** are in regular text and navigate to different sections in this notebook through HTML anchors.
+    - e.g. <a href='#toc'>Table of Contents</a> would take you to that section of the notebook
+- **External website links** are in *italic text* and navigate to external websites.
+    - e.g. *https://www.leetcode.com*
+- **Checkboxes** are updated by `double-click` or pressing `Enter` in a cell and changing:
     - `<input type="checkbox">` = Unchecked (<input type="checkbox">)
     - `<input type="checkbox" checked>` = Checked (<input type="checkbox" checked>)
 
 ![screenshot-problem-list](./screenshot-problem-list.png)
-
-<br><br>
-
-- Worked problem sections are setup with Note and Code cells ready to go.
-- Easily modify cells, add, or delete to your liking
-
+<br>
 ![screenshot-problem](./screenshot-problem.png)
